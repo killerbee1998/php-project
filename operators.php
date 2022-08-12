@@ -29,4 +29,11 @@
     echo $x or $y, "<br>";
     echo $x xor $y, "<br>";
     echo !$x, "<br>";
+
+    // string operators
+    $str1 = "Hello ";
+    $str2 = "World";
+    echo $str1.$str2 , "<br>";
+    $str1.=$str2;
+    echo $str1;
 ?>
