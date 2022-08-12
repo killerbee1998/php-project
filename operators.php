@@ -21,4 +21,12 @@
     echo $c, "<br>";
     $c/=2;
     echo $c, "<br>";
+
+    // logical operator
+    $x = true;
+    $y=false;
+    echo $x and $y, "<br>";
+    echo $x or $y, "<br>";
+    echo $x xor $y, "<br>";
+    echo !$x, "<br>";
 ?>
