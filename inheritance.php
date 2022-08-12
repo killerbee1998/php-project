@@ -17,6 +17,11 @@ class Car {
   public function get_name() {
     return $this->name;
   }
+
+  function __destruct(){
+    echo "This Car named ", $this->name, " is being deleted";
+    echo "<br>";
+  }
 }
 
 class F1 extends Car{
@@ -32,6 +37,11 @@ class F1 extends Car{
     function __construct($name, $color){
         $this->name = $name." F1 team";
         $this->color = $color." F1 team";
+    }
+
+    function __destruct(){
+        echo "This F1 Car named ", $this->name, " is being deleted";
+        echo "<br>";
     }
 }
 
