@@ -35,5 +35,15 @@
     $str2 = "World";
     echo $str1.$str2 , "<br>";
     $str1.=$str2;
-    echo $str1;
+    echo $str1, "<br>";
+
+    // conditional assignment
+    $a = 1;
+    $b = 2;
+    $xx = $a>$b ? "a>b" : "b>a";
+    echo $xx, "<br>";
+
+    $b = NULL;
+    $xx = $b ?? $a;
+    echo $xx , "<br>" 
 ?>
