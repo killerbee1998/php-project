@@ -3,6 +3,11 @@ class Car {
   public $name;
   public $color;
 
+  function __construct(){
+    $this->name = "Car";
+    $this->color = "None";
+  }
+
   function set_name($name) {
     $this->name = $name;
   }
