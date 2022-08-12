@@ -14,6 +14,11 @@ class Car {
   function get_name() {
     return $this->name;
   }
+
+  function __destruct(){
+    echo "This Car named ", $this->name, " is being deleted";
+    echo "<br>";
+  }
 }
 
 $lambo = new Car();
@@ -25,4 +30,5 @@ $ferrari->set_name("Ferrari");
 echo $lambo->get_name();
 echo "<br>";
 echo $ferrari->get_name();
+echo "<br>";
 ?>
