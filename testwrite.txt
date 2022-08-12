@@ -1,0 +1,2 @@
+The old file is dead
+This is the new second line
